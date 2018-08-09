@@ -13,8 +13,8 @@ timezone:
 avatar: http://img5.imgtn.bdimg.com/it/u=1934952861,3453579486&fm=27&gp=0.jpg 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /public
+url: http://pankangtian.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
