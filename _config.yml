@@ -10,7 +10,7 @@ keywords:
 author: kangtian.poon
 language: zh-Hans
 timezone:
-avatar: http://img5.imgtn.bdimg.com/it/u=1934952861,3453579486&fm=27&gp=0.jpg 
+avatar: 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://pankangtian.github.io
@@ -75,9 +75,31 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# 搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+
+
+# RSS订阅
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: git@github.com:Pankangtian/Pankangtian.github.io.git
   branch: master
+
+
