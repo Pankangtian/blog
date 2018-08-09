@@ -123,8 +123,8 @@ menu:
   文章: /archives/ || archive
   #日程: /schedule/ || calendar
   公益: /404/ || heartbeat
-  网站地图: /sitemap.xml || sitemap
   关于我: /about/ || user
+  #网站地图: /sitemap.xml || sitemap
 
 # Enable/Disable menu icons / item badges.
 menu_settings:
