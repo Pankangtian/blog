@@ -15,7 +15,8 @@ categories: [剑指offer]
  
  根据前序遍历和中序遍历还原二叉树的一个要点是，前序遍历的每一个节点可以当成根节点处理，叶子节点即为子节点为空的根节点。而根据前序遍历定义的根节点的值在中序遍历所在索引的左边即为左子树，右边即为右子树。
  
-      public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
+
+        public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
         int len=in.length;
         // 用map是因为其查找效率均衡，在数据量较大时较优.hashMap默认因子为0.75
         HashMap<Integer,Integer> map= new HashMap<Integer, Integer>(len*4/3+2);
@@ -40,3 +41,4 @@ categories: [剑指offer]
         root.right = reBulid(pre,prestart+i+1-instart,preend,in,i+1,inend,map);
         return root;
     }
+
