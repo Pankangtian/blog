@@ -16,6 +16,9 @@
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
+	<meta name="baidu-site-verification" content="sIDT1O5PK0" />
+	<meta name="baidu-site-verification" content="6BooDwaZOH" />
+
   {{ partial('_partials/head/head.swig', {}, {cache: theme.cache.enable}) }}
   {% include '_partials/head/head-unique.swig' %}
   <title>{% block title %}{% endblock %}</title>
@@ -123,5 +126,23 @@
 <script type="text/javascript"
 color="0,0,255" opacity='0.7' zIndex="-2" count="36" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 {% endif %}
+
+<a href="http://kangtian.coding.me/" title="Codingme"></a>
+<a href="https://pankangtian.github.io/" title="Github"></a>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 </body>
 </html>
