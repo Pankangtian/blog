@@ -25,7 +25,8 @@
 {% endif %}
 
 {% if theme.canvas_nest %}
-  {% set js_vendors.canvas_nest  = 'canvas-nest/canvas-nest.min.js' %}
+{#  it has been removed to   _layout.swig  #}
+ {#  set js_vendors.canvas_nest  = 'canvas-nest/canvas-nest.min.js'   #}
 {% endif %}
 
 {% if theme.three_waves %}

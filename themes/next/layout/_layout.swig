@@ -122,9 +122,11 @@
   {% include '_third-party/copy-code.swig' %}
 
  <script type="text/javascript" src="/js/src/love.js"></script>
+ <!-- Js文件存储于themes\next\source\js  或themes\next\source\lib  -->
 {% if theme.canvas_nest %}
-<script type="text/javascript"
-color="0,0,255" opacity='0.7' zIndex="-2" count="36" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+<script type="text/javascript" src="/js/src/canvas-nest.min.js"></script>
+
 {% endif %}
 
 <a href="http://kangtian.coding.me/" title="Codingme"></a>
