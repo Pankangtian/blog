@@ -4,9 +4,9 @@
 
 # Site
 title: FIRE Blog
-subtitle: 发现编程之美
+subtitle: 
 description: 
-keywords:
+keywords:  后端博客,Java,Spring,工具,linux,tomcat,算法,编程,nginx,maven,mybatis,mysql,freemark,Blog,博客,后端,服务器端开发,Web
 author: kangtian.poon
 language: zh-Hans
 timezone:

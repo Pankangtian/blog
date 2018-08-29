@@ -107,6 +107,12 @@
   <meta property="fb:app_id" content="{{ theme.facebook_sdk.app_id }}" />
 {% endif %}
 
+{% if theme.custom_file_path.head %}
+  {% set custom_head = '../../../../../' + theme.custom_file_path.head %}
+{% else %}
+  {% set custom_head = '../../_custom/head.swig' %}
+{% endif %}
+{% include custom_head %}
 
 {# Export some HEXO Configurations to Front-End #}
 <script type="text/javascript" id="hexo.configurations">
@@ -130,10 +136,3 @@
     }
   };
 </script>
-
-{% if theme.custom_file_path.head %}
-  {% set custom_head = '../../../../../' + theme.custom_file_path.head %}
-{% else %}
-  {% set custom_head = '../../_custom/head.swig' %}
-{% endif %}
-{% include custom_head %}
