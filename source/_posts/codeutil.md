@@ -97,3 +97,8 @@ categories: [Java 工具]
 	function changeVerifyCode(img) {
 	img.src = "../Kaptcha?" + Math.floor(Math.random() * 100);
 	}
+
+
+
+
+<center>[Coding Blog](http://kangtian.coding.me)     &nbsp;&nbsp;&nbsp;    [Github Blog  ](http://pankangtian.github.io/) </center>

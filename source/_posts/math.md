@@ -36,3 +36,7 @@ categories: [剑指offer]
         }
         return  num>0?result:1/result; //当指数为负时，返回1/result。否则返回result
     }
+
+
+
+<center>[Coding Blog](http://kangtian.coding.me)     &nbsp;&nbsp;&nbsp;    [Github Blog  ](http://pankangtian.github.io/) </center>

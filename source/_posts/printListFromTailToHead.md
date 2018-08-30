@@ -5,7 +5,7 @@ tags: [linked-list]
 categories: [剑指offer]
 
 ---
-####   1.输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。
+####   [题目](https://kangtian.coding.me/2018/08/19/printListFromTailToHead/)：输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。
 
 ----
 
@@ -60,3 +60,5 @@ categories: [剑指offer]
       }
       return arrayList;
     }
+
+    <center>[Coding Blog](http://kangtian.coding.me)     &nbsp;&nbsp;&nbsp;    [Github Blog  ](http://pankangtian.github.io/) </center>

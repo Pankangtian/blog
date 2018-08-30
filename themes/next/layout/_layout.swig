@@ -16,8 +16,11 @@
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
+	<meta name="google-site-verification" content="FDd8ilZj1cRkdaFXuofFP12HzytuqjWr51W1rZKtyns" />
+	<meta name="google-site-verification" content="RBwyQj0dJL8cog9Uc6UkWTREqxpNUTTN7vjJVP_w5Ao" />
 	<meta name="baidu-site-verification" content="sIDT1O5PK0" />
 	<meta name="baidu-site-verification" content="6BooDwaZOH" />
+	<meta name="baidu-site-verification" content="pTuFnKjsbT" />
 
   {{ partial('_partials/head/head.swig', {}, {cache: theme.cache.enable}) }}
   {% include '_partials/head/head-unique.swig' %}

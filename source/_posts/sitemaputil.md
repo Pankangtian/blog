@@ -167,3 +167,6 @@ Google、雅虎、和微软都支持一个被称为xml网站地图（xml Sitemap
 	    }
 	
 	}
+
+
+<center>[Coding Blog](http://kangtian.coding.me)     &nbsp;&nbsp;&nbsp;    [Github Blog  ](http://pankangtian.github.io/) </center>
