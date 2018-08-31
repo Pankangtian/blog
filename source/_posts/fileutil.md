@@ -34,6 +34,48 @@ categories: [Java 工具]
 		}
 	}
 
+3.读取文件内容到string中
 
+	public static String readFileToStr(String path){
+		StringBuffer stringBuffer=new StringBuffer();
+		try {
+			BufferedReader in = new BufferedReader(new FileReader(path));
+		String line=	in.readLine();
+		while (line!=null){
+			stringBuffer.append(line);
+			line=in.readLine();
+		}
+		in.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return stringBuffer.toString();
+	}
+
+4.读取配置文件内容到map，可通过map读取对应配置
+
+		 public static HashMap<String, String> readFiletoMap(String path) {
+	        HashMap<String, String> propeMap = new HashMap<String, String>();
+	        String[] tem;
+	        String line="";
+	        try {
+	            BufferedReader in = new BufferedReader(new FileReader(path));
+	            line = in.readLine();
+	            while (line != null) {
+	               tem=line.split("=");
+	               if (tem.length>1)
+	                propeMap.put(tem[0],tem[1]);
+	                line = in.readLine();
+	            }
+	            in.close();
+	        } catch (FileNotFoundException e) {
+	            e.printStackTrace();
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        return propeMap;
+    	}
 
 <center>[Coding Blog](http://kangtian.coding.me)     &nbsp;&nbsp;&nbsp;    [Github Blog  ](http://pankangtian.github.io/) </center>

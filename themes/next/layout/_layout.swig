@@ -18,9 +18,12 @@
 <head>
 	<meta name="google-site-verification" content="FDd8ilZj1cRkdaFXuofFP12HzytuqjWr51W1rZKtyns" />
 	<meta name="google-site-verification" content="RBwyQj0dJL8cog9Uc6UkWTREqxpNUTTN7vjJVP_w5Ao" />
+  <meta name="google-site-verification" content="cQXaEYncTJM6WEL6LXzrl933Q90yEjXfvvnBGK_AkmA" />
 	<meta name="baidu-site-verification" content="sIDT1O5PK0" />
 	<meta name="baidu-site-verification" content="6BooDwaZOH" />
 	<meta name="baidu-site-verification" content="pTuFnKjsbT" />
+  <meta name="baidu-site-verification" content="t4G74at3I4" />
+
 
   {{ partial('_partials/head/head.swig', {}, {cache: theme.cache.enable}) }}
   {% include '_partials/head/head-unique.swig' %}
@@ -31,6 +34,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
+
 
   {% set container_class = "container " %}
   {% if theme.sidebar.position %}
@@ -43,12 +47,17 @@
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner">{% include '_partials/header/index.swig' %}</div>
     </header>
+    <span id="showorhide" style="float:right;"><a href="http://pankangtian.github.io">如觉卡顿，请访问原博客  </a></span>
+    
 
     {{ partial('_third-party/github-banner.swig', {}, {cache: theme.cache.enable}) }}
 
     <main id="main" class="main">
+
       <div class="main-inner">
+
         <div class="content-wrap">
+
           {% if theme.scheme === 'Pisces' || theme.scheme === 'Gemini' %}
             {% include '_partials/header/sub-menu.swig' %}
           {% endif %}
@@ -150,5 +159,13 @@
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
+ <script type="text/javascript">
+ 
+		var domain = window.location.host;
+		if (domain.includes("git")) {
+			document.getElementById('showorhide').style.display='none';
+		}
+		
+     </script>
 </body>
 </html>

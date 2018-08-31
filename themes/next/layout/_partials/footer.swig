@@ -67,8 +67,4 @@
 #}</div>
 {% endif %}
 <div>
-<span> <a href="http://kangtian.coding.me/" title="Codingme">CodingMe Blog</a> </span>
-<span class="post-meta-divider">|</span>
-<span> <a href="https://pankangtian.github.io/" title="Github">Github Blog</a></span>
-</div>
 

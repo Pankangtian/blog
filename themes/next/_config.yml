@@ -184,10 +184,13 @@ social_icons:
 # Blog rolls
 links_icon: link
 links_title: Links
-links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
+#links_layout: block
+links_layout: inline
+links:
+  Github Blog: http://pankangtian.github.io/
+  Gitee Blog: http://pankangtian.gitee.io/
+  Codingme Blog: https://kangtian.coding.me/
+  Domain: http://kangtian.site/
 
 # Sidebar Avatar
 avatar:  
