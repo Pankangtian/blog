@@ -121,6 +121,7 @@ menu:
   分类: /categories/ || th
   标签: /tags/ || tags
   文章: /archives/ || archive
+  推荐: /recommend/ || archive
   #日程: /schedule/ || calendar
   公益: /404/ || heartbeat
   关于我: /about/ || user
