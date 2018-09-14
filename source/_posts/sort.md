@@ -1,8 +1,8 @@
 ---
 title: JAVA排序算法      
 date: 2018-09-14 15:02:06   
-tags:   - sort     
-        -  排序      
+tags:  [sort,排序]     
+      
 categories:  工具
 
 ---
