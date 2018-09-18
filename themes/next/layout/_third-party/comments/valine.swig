@@ -24,5 +24,15 @@
         pageSize:'{{ theme.valine.pageSize }}' || 10,
         visitor: {{ theme.valine.visitor }}
     });
+
+
+
+var infoEle = document.querySelector('#comments .info');
+if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+  infoEle.childNodes.forEach(function(item) {
+    item.parentNode.removeChild(item);
+  });
+}
+
   </script>
 {% endif %}

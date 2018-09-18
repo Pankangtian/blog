@@ -62,9 +62,15 @@
             {% include '_partials/header/sub-menu.swig' %}
           {% endif %}
           <div id="content" class="content">
-            {% block content %}{% endblock %}
+
+            {% block content %}
+             
+
+            {% endblock %}
+            {% include '_partials/comments.swig' %}
+
           </div>
-          {% include '_partials/comments.swig' %}
+        
         </div>
         {% if theme.sidebar.display !== 'remove' %}
           {% block sidebar %}{% endblock %}
