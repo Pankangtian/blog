@@ -5,7 +5,7 @@ tags:
 	- 工具 
 	- SEO
 	 
-categories: [Java 工具]
+categories: [Java工具]
 
 ---
 

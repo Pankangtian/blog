@@ -5,7 +5,7 @@ tags:
 	- 工具
 	- 验证码
 	
-categories: [Java 工具]
+categories: [Java工具]
 
 ---
 本验证码生成采用的是Google提供的第三方KAPTCHA服务，使用及其方便，使用步骤分为以下三步：   
