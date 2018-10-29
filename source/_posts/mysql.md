@@ -62,8 +62,31 @@ categories: 笔记
          	CONSTRAINT user_job FOREIGN KEY (job_id) REFERENCES JOB (id) #on delete cascade
          ) ENGINE = INNODB CHARSET = utf8;
 
+2. 查询
+mysql 的基本查询格式如下      
+        select 查询内容  
+          from 表名
+          where 表达式  
+          group by 字段名
+          having 表达式
+          order by 字段名
+          limit 记录数                    
+简单查询语句有     
+        select * from user;  或        select name,age from user;
+        select * from user where  age between 5 and 12;  #条件查询
+        select * from user where  age > 5 and age< 12;  
+        select * from user where age is NOT NULL; #非空查询
+        select name from user where name like '11__'; #模糊查询
+        select age from user where age not in (14,46); #in  / not in
+分组查询   
+select 查询内容 from 表名    group by 分组依据 [having表达式条件]  
+        select NAME from user group by job_id having age>18;
 
-
+where 与 having：     
+    where 与 having关键字都用于设置条件表达式对查询结果进行过滤，区别是having后面可以跟聚合
+    函数，而where不能，通常having关键字都与group by 一起使用，表示对分组后的数据进行过滤    
+order by用于排序， 排序条件 asc/desc，asc表示升序 desc表示降序
+limit 用于限制 查询 具体返回哪几条记录
 
 
 
